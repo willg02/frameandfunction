@@ -1,0 +1,60 @@
+.project-grid-container {
+  width: 100%;
+}
+
+.project-filters {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-2xl);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-chip {
+  padding: 10px 20px;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--deep);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 500;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.filter-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.filter-chip.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.filter-chip:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: var(--space-xl);
+}
+
+.no-results {
+  text-align: center;
+  padding: var(--space-3xl) 0;
+  color: var(--deep);
+  opacity: 0.6;
+  font-size: var(--text-lg);
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
