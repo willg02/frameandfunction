@@ -1,0 +1,142 @@
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--deep);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: var(--space-lg);
+  transition: color var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.project-detail-header {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-title {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-lg);
+}
+
+.project-summary-large {
+  font-size: var(--text-xl);
+  line-height: 1.7;
+  color: var(--deep);
+  opacity: 0.9;
+  margin-bottom: var(--space-2xl);
+}
+
+.project-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-xl);
+  padding: var(--space-xl);
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  text-align: left;
+}
+
+.meta-item h4 {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--deep);
+  opacity: 0.6;
+  margin-bottom: var(--space-sm);
+}
+
+.meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.meta-value {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.project-cover {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.project-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-gallery {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.gallery-item {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.outcome-section {
+  background: white;
+  margin: 0 calc(-50vw + 50%);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
+.outcome-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-2xl);
+  background: var(--paper);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+
+.outcome-box h3 {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-md);
+  color: var(--accent);
+}
+
+.outcome-box p {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--deep);
+  opacity: 0.9;
+}
+
+.project-detail-cta {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.project-detail-cta h2 {
+  margin-bottom: var(--space-xl);
+}
+
+@media (max-width: 768px) {
+  .project-meta-grid {
+    grid-template-columns: 1fr;
+  }
+}

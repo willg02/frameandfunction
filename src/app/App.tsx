@@ -7,6 +7,7 @@ import { Work } from '../pages/Work';
 import { Services } from '../pages/Services';
 import { About } from '../pages/About';
 import { Contact } from '../pages/Contact';
+import { ProjectDetail } from '../pages/ProjectDetail';
 import '../styles/globals.css';
 
 export const App: React.FC = () => {
@@ -17,6 +18,7 @@ export const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/work/:slug" element={<ProjectDetail />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
